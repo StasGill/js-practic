@@ -1,2 +1,1 @@
-# StasGill
-js-practice
+Practic task on JavaScript

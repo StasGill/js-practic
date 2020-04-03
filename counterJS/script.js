@@ -13,11 +13,7 @@ Counter.prototype.dicrement = function(){                                       
     this.value -=this.step
 }
 
-const counter = new Counter({initialValue : 1, step : 1})                         // Создаем экземпляр функции конструктора
-counter.increment()
-counter.increment()
-
-
+const counter = new Counter({initialValue : 0, step : 1})                         // Создаем экземпляр функции конструктора
 
 const incrementBtn = document.querySelector('button[data-action="increment"]')   //Находим кнопки в доме
 const dicrementBtn = document.querySelector('button[data-action="dicrement"]')

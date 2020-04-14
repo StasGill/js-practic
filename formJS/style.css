@@ -1,0 +1,63 @@
+
+.formContainer{
+    
+    width: 400px;
+    margin: 30px auto;
+    font-weight: 600;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    padding: 20px;
+}
+button{
+    display: block;
+    width: 400px;
+    height: 40px;
+    background-color: blue;
+    color: white;
+    margin: 15px auto;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.inputStyle{
+    width: 400px;
+    height: 40px;
+    margin-bottom: 15px;
+}
+
+body.show-modal .backDrop {
+   opacity: 1;
+   visibility: visible;
+   pointer-events: initial;
+}
+body.show-modal .modal {
+    transform: scale(1);
+}
+
+.backDrop{
+display: flex;
+justify-content: center;
+align-items: center;
+position: fixed;
+top: 0;
+left: 0;
+width: 100vw;
+height: 100vh;
+background-color: rgba(0, 0, 0,0.3);
+z-index: 999;
+pointer-events: none;
+opacity: 0;
+visibility: hidden;
+transition: opacity 200ms ease-in-out, visibility 200ms ease-in-out ;
+}
+
+.modal{
+    padding: 24px;
+    border-radius: 4px;
+    max-width: 640px;
+    width: 100%;
+    min-height: 320px;
+    background-color: whitesmoke;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    transform: scale(1.1);
+    transition: transform 200ms ease-in-out;
+}

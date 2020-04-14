@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body class="">
+    <div class='formContainer'>
+        <form action="" class="js-register-form">
+            <label for="">
+                Name
+                <input type="text" class="inputStyle" name="name" type="text">
+            </label>
+            <label for="">
+                E-mail
+                <input type="text" class="inputStyle" name="email" type="text">
+            </label>
+            <label for="">
+                Password
+                <input type="text" class="inputStyle" name="password" type="password">
+            </label>
+            
+            <span>Choose subscription type:</span><br/>
+            
+            <label >
+                <input type="radio"  name="subscription" value="Free" >
+                Free
+            </label>
+
+            <label>
+                <input type="radio"  name="subscription"  value="Basic">
+                Basic
+            </label>
+
+            <label>
+                <input type="radio"  name="subscription" value="Pro">
+                Pro
+            </label>
+            <button type="submit">Register</button>
+        </form>
+        <button class="button" data-action="open-modal">Check Register Info</button>
+    </div>
+    
+    <div class="backDrop js-backDrop">
+        <div class="modal">
+            <!-- <h1>Very important information</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor amet placeat ea officiis, sit deleniti 
+                possimus sapiente est exercitationem hic perferendis minima eveniet at. Eius voluptatum deleniti pariatur 
+                veritatis earum, iure expedita facere? Architecto dolore impedit sapiente consectetur rerum ad rem labore sed, 
+                atque alias quos dolorem dolores consequuntur omnis dolorum culpa possimus obcaecati blanditiis? Laboriosam dignissimos maiores vero
+                 aliquam a. Dolorum doloribus dolor qui veritatis esse temporibus nesciunt, distinctio blanditiis! Cumque deserunt praesentium non eos aut 
+                 excepturi voluptatibus corporis dolore minima! Dolorem at, minus nam harum eos voluptas in incidunt, molestias explicabo, labore doloribus!</p> -->
+                 <button class="button" data-action="close-modal">Close</button>
+                </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

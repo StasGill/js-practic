@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./normalize.css">
+</head>
+<body>
+    <section class="main">
+        <nav class="navigation">
+            <ul class="navigationUl js-navigationUl">
+                <li class="navigation__item "><a href="#" class="navigationLink">Home</a></li>
+                <li class="navigation__item"><a href="#"  class="navigationLink">Blog</a></li>
+                <li class="navigation__item"><a href="#"  class="navigationLink">Contact</a></li>
+                <li class="navigation__item"><a href="#"  class="navigationLink">About</a></li>
+                </ul>
+        </nav>
+        <div class="aboutItems js-aboutItems">
+            <button class="aboutItem">HTML</button>
+            <button class="aboutItem">CSS</button>
+            <button class="aboutItem">JavaScript</button>
+            <button class="aboutItem">React</button>
+            <button class="aboutItem">Node</button>
+            <button class="aboutItem">Npm</button>
+        </div>
+        <section>
+            <form class="toDoAdd js-toDoAdd">
+                <input type="text" class="toDoAddInput" name="text">
+                <button class="toDoAddBtn">Save</button>
+            </form>
+            <ul class="toDoItems js-toDoItems">
+                
+            </ul>
+        </section>
+    </section>
+    <script src="./script.js" type="module"></script>
+    <script src="./nav.js" type="module"></script>
+    <script src="./about.js" type="module"></script>
+    <script src="./todo.js" type="module"></script>
+</body>
+</html>

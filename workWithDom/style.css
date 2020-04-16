@@ -1,0 +1,120 @@
+.main{
+    width: 1100px;
+    /* background-color: lightseagreen; */
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+}
+.navigation{
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+.navigationUl{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    width: 600px;
+    margin: 0 auto;
+
+}
+.navigation__item{
+    padding: 0;
+}
+.navigationLink{
+    display: block;
+    color: black;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 100px;
+    height: 40px;
+    /* margin: 10px; */
+    text-align: center;
+    padding: 10px;
+}
+
+.navigationLink--active{
+    background-color: rgb(57, 90, 197);
+    color: white;
+    border-radius: 5px;
+}
+
+.navigation__item:hover{
+    text-decoration: black underline;
+}
+
+.aboutItems{
+    width: 1000px;
+    margin: 0 auto 30px auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+}
+
+.aboutItem{
+    width: 120px;
+    height: 30px;
+    background-color: white;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    margin: 10px;
+    transition: all 300ms;
+}
+.aboutItem--active{
+    background-color: rgb(57, 90, 197);
+    color: white;
+}
+.aboutItem:hover{
+    transform: scale(1.1);
+  
+    
+}
+.toDoAdd{
+    width: 1000px;
+    margin: 0 auto 30px auto; 
+}
+.toDoAddInput{
+    width: 800px;
+    height: 40px;
+    border-radius: 5px;
+}
+.toDoAddBtn{
+    width: 190px;
+    height: 50px;
+    background-color: rgb(75, 75, 207);
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.toDoItem{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(255, 255, 220);
+    padding: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    margin-bottom: 15px;
+}
+.toDoItems{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 1000px;
+    margin: 0 auto;
+    padding: 0;
+}
+.toDosText{
+    height: 70px;
+}
+.toDoItemBtm{
+    display: block;
+    width: 140px;
+    height: 40px;
+    background-color: rgb(57, 90, 197);
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 70px auto 0 auto;
+}

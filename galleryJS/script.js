@@ -20,7 +20,9 @@ function openModal(e){                                     //Открытие п
     
     ref.modalImg.src = e.target.dataset.source
     ref.modal.classList.add('is-open')  
-    window.addEventListener('keydown', handlePressKey)            
+    window.addEventListener('keydown', handlePressKey)  
+    // console.log('fuu',e.target.parentNode.parentNode.firstElementChild.href)    
+    
 }
 
 function closeModal(){                                    //Закрытие по кнопке
@@ -29,14 +31,22 @@ function closeModal(){                                    //Закрытие п�
         }
 
 function handleBackDropClick(event){                      //Закрытие по бекдропу
-    if(event.target !== event.currentTarget){             //Проверка на каррент таргет
+    if(event.target !== event.currentTarget){             //Проверка на каррент таргет ArrowRight
         return
     }
    closeModal()
 }
 
 function handlePressKey(event){
-    
+    // console.log(event.target)
+    if(event.code === 'ArrowRight'){
+        let fuu = event.target.parentNode.nextElementSibling.firstElementChild.href
+        console.log(event.target.parentNode.nextElementSibling.firstElementChild.href)
+        return  ref.modalImg.src = fuu
+        
+        
+        
+    }
     if(event.code !== 'Escape'){
         return
     }
